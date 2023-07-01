@@ -3,10 +3,10 @@
 import clsx from 'clsx'
 import Link from 'next/link'
 
-const DesktopItem = ({ label, href, icon: Icon, active, onclick }) => {
+const DesktopItem = ({ label, href, icon: Icon, active, onClick }) => {
   const handleClick = () => {
-    if (onclick) {
-      return onclick()
+    if (onClick) {
+      return onClick()
     }
   }
   return (
